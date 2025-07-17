@@ -1,0 +1,160 @@
+/*
+Archivo de estilos principal para la Escuela de Gastronomía "Sabores del Mundo"
+Paleta de colores:
+- Verde oliva oscuro: #203500
+- Beige claro: #F5F5DC
+- Rojo terracota: #C1440E
+- Blanco: #FFFFFF
+
+Tipografías:
+- Títulos: Playfair Display
+- Texto: Open Sans
+*/
+
+body {
+    background-color: #F5F5DC !important; /* Fondo beige claro en todo el body, con !important para asegurar prioridad */
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.navbar {
+    font-family: 'Open Sans', Arial, sans-serif;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.logo-placeholder {
+    /* Espacio reservado para el logo */
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: #F5F5DC;
+    color: #203500;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 48px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.banner-principal {
+    width: 100%;
+    height: 220px;
+    position: relative;
+    /* Imagen de fondo tipo madera/comida usando la URL proporcionada */
+    background-image: url('https://png.pngtree.com/background/20210711/original/pngtree-food-festival-food-promotion-banner-poster-picture-image_1092303.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.banner-imagenes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+/*
+Ejemplo de posicionamiento para imágenes de platos en las esquinas:
+.plato-esquina-izq {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+}
+.plato-esquina-der {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 140px;
+}
+*/
+
+.banner-overlay {
+    /* Capa opcional para oscurecer o dar efecto al banner */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(32, 53, 0, 0.15); */
+    z-index: 1;
+}
+
+.bienvenida-box {
+    background-color: #DDE2C6; /* Un beige más suave para destacar */
+    border-left: 6px solid #203500;
+    min-height: 180px;
+}
+
+.enlaces-box {
+    background-color: #F5F5DC;
+    border-left: 6px solid #C1440E;
+    min-height: 180px;
+}
+
+footer {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 1rem;
+}
+
+/*
+Agrega aquí estilos adicionales según lo requieras para otras secciones.
+*/
+
+/* =============================
+   Efectos visuales y transiciones
+   ============================= */
+
+/* Efecto y transición para el botón de enviar */
+.btn[style*='#C1440E'] {
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(193,68,14,0.08);
+}
+.btn[style*='#C1440E']:hover {
+    background: #a83206;
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 6px 16px rgba(193,68,14,0.18);
+}
+
+/* Inputs y textarea: efecto al enfocar y hover */
+.form-control {
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.form-control:focus {
+    border-color: #C1440E;
+    box-shadow: 0 0 0 0.2rem rgba(193,68,14,0.15);
+}
+.form-control:hover {
+    border-color: #a83206;
+}
+
+/* Efecto para select */
+.form-select {
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.form-select:focus {
+    border-color: #C1440E;
+    box-shadow: 0 0 0 0.2rem rgba(193,68,14,0.12);
+}
+.form-select:hover {
+    border-color: #a83206;
+}
+
+/* Navbar: efecto en los links al pasar el mouse */
+.navbar-nav .nav-link {
+    transition: color 0.2s, text-shadow 0.2s;
+}
+.navbar-nav .nav-link:hover {
+    color: #C1440E !important;
+    text-shadow: 0 2px 8px rgba(193,68,14,0.10);
+}
+
+/* Animación sutil para el logo al pasar el mouse */
+.navbar-brand img {
+    transition: transform 0.3s;
+}
+.navbar-brand img:hover {
+    transform: rotate(-6deg) scale(1.08);
+} 

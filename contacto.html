@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Sabores del Mundo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- Navbar principal (igual que en index) -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #203500;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Logo Sabores del Mundo" style="height:48px; width:auto; border-radius:50%; padding:2px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="cursos.html">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="galeria.html">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="testimonios.html">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="contacto.html">Contactos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="noticias.html">Noticias</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección principal de contacto -->
+    <section class="container my-4">
+        <form class="row g-3 justify-content-center align-items-start">
+            <div class="col-md-5">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control mb-3" id="nombre" name="nombre" required>
+                <label for="correo" class="form-label">Correo:</label>
+                <input type="email" class="form-control mb-3" id="correo" name="correo" required>
+                <label for="telefono" class="form-label">Telefono:</label>
+                <input type="tel" class="form-control mb-3" id="telefono" name="telefono">
+                <label for="asunto" class="form-label">Asunto:</label>
+                <div class="input-group mb-3">
+                    <select class="form-select" id="asunto" name="asunto" required style="appearance: none;">
+                        <option value="" disabled selected>Selecciona un asunto</option>
+                        <option value="info-cursos">Información de cursos</option>
+                        <option value="inscripcion">Inscripción</option>
+                        <option value="visita">Visita guiada</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                   
+                </div>
+            </div>
+            <div class="col-md-7">
+                <label for="mensaje" class="form-label">Mensaje(Descriptivo):</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="10" required></textarea>
+            </div>
+            <div class="col-12 d-flex justify-content-center mt-3">
+                <button type="submit" class="btn fw-bold px-5 py-2" style="background-color: #C1440E; color: #fff; font-size: 1.3rem;">Enviar</button>
+            </div>
+        </form>
+        <!-- Sección para carga dinámica de noticias -->
+        <div class="row justify-content-center mt-5">
+            <div class="col-12 d-flex justify-content-center">
+                <button id="btn-cargar-noticias" class="btn btn-outline-success fw-bold mb-4">Cargar noticias</button>
+            </div>
+            <div id="contenedor-noticias" class="row gy-4"></div>
+        </div>
+    </section>
+
+    <!-- Footer simple -->
+    <footer class="text-center py-3" style="background-color: #203500; color: #fff;">
+        &copy; 2025 Escuela de Gastronomía "Sabores del Mundo". Todos los derechos reservados.
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS personalizado para validación e interacciones -->
+    <script src="js/contacto.js"></script>
+</body>
+</html>

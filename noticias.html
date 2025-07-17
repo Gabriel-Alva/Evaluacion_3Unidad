@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias | Sabores del Mundo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- Navbar principal (igual que en index) -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #203500;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Logo Sabores del Mundo" style="height:48px; width:auto; border-radius:50%; padding:2px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="cursos.html">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="galeria.html">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="testimonios.html">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="contacto.html">Contactos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="noticias.html">Noticias</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección principal de noticias -->
+    <section class="container my-4">
+        <div class="row">
+            <!-- Columna izquierda: Últimas Noticias y Artículos -->
+            <div class="col-md-8 pe-md-4" style="border-right: 2px solid #203500;">
+                <h4 class="fw-bold mb-3" style="font-family: 'Open Sans', sans-serif;">Ultimas Noticias</h4>
+                <div class="mb-4">
+                    <img src="https://www.ilcb.edu.pe/repositorioaps/data/1/2/2/jer/gastronomia-y-arte-culinario/images/interior-gastronom%C3%ADa.jpg" style="width:100%; height:170px; object-fit:cover; border-radius:6px;" alt="Noticia reciente">
+                    <div class="mt-2" style="font-size:1rem;">
+                        <b>Nuevo ciclo académico inicia en agosto</b><br>
+                        La Escuela de Gastronomía Sabores del Mundo abre inscripciones para el nuevo ciclo académico. ¡No pierdas la oportunidad de formar parte de nuestra comunidad culinaria!
+                    </div>
+                </div>
+                <h5 class="fw-bold mb-2" style="font-family: 'Open Sans', sans-serif; background:#6B8E23; color:#fff; padding:8px 12px; border-radius:4px;">Artículos</h5>
+                <div style="background:#6B8E23; color:#fff; border-radius:6px; min-height:180px; padding:18px; font-size:1rem;">
+                    <b>La importancia de la cocina peruana en el mundo</b><br>
+                    Descubre cómo la gastronomía peruana ha conquistado paladares internacionales y por qué nuestros cursos te preparan para destacar en el sector.
+                </div>
+            </div>
+            <!-- Columna derecha: Eventos Recientes -->
+            <div class="col-md-4 ps-md-4 mt-4 mt-md-0">
+                <h4 class="fw-bold mb-3" style="font-family: 'Open Sans', sans-serif;">Eventos Recientes</h4>
+                <div class="mb-3">
+                    <img src="https://laotraprensa.com/wp-content/uploads/2024/09/peru-mucho-gusto_638266534500443705.jpg" style="width:100%; height:240px; object-fit:cover; border-radius:6px;" alt="Evento reciente 1">
+                    <div class="mt-2" style="background:#6B8E23; color:#fff; border-radius:4px; padding:6px 10px;">Participación en la Feria Gastronómica Mistura 2025</div>
+                </div>
+                <div class="mb-3">
+                    <img src="https://pinamar.gob.ar/wp-content/uploads/WhatsApp-Image-2023-08-10-at-09.31.18-819x1024-1.jpeg" style="width:100%; height:150px; object-fit:cover; border-radius:6px;" alt="Evento reciente 2">
+                    <div class="mt-2" style="background:#6B8E23; color:#fff; border-radius:4px; padding:6px 10px;">Taller de cocina saludable para la comunidad</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer simple -->
+    <footer class="text-center py-3" style="background-color: #203500; color: #fff;">
+        &copy; 2025 Escuela de Gastronomía "Sabores del Mundo". Todos los derechos reservados.
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

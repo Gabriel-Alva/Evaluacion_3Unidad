@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela de Gastronomía Sabores del Mundo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts: Playfair Display y Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- Navbar principal -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #203500;">
+        <div class="container-fluid">
+            <!-- Espacio para el logo -->
+            <a class="navbar-brand" href="#">
+                <!-- Logo institucional -->
+                <img src="img/logo.png" alt="Logo Sabores del Mundo" style="height:48px; width:auto; border-radius:50%; padding:2px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="cursos.html">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="galeria.html">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="testimonios.html">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="contacto.html">Contactos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="noticias.html">Noticias</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrusel principal con Bootstrap -->
+    <section class="container-fluid px-0">
+        <div id="carruselPrincipal" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1: Banner principal -->
+                <div class="carousel-item active">
+                    <div class="banner-principal d-flex align-items-center justify-content-center" style="height: 350px; background: url('img/logo.png') center/contain no-repeat, #f5e9d7; position: relative;">
+                        <div class="banner-overlay" style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(32,53,0,0.25);"></div>
+                        <div class="position-relative text-center" style="z-index:2;">
+                            <h1 class="fw-bold" style="color:#203500; font-family: 'Playfair Display', serif; font-size:2.2rem;">Sabores del Mundo</h1>
+                            <p class="lead" style="color:#C1440E; font-weight:bold;">¡Bienvenido a la experiencia culinaria!</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2: Ejemplo -->
+                <div class="carousel-item">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 350px; background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80') center/cover no-repeat; position: relative;">
+                        <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(193,68,14,0.18);"></div>
+                        <div class="position-relative text-center" style="z-index:2;">
+                            <h2 class="fw-bold text-white">Descubre nuestros cursos</h2>
+                            <p class="text-white">Formación profesional en gastronomía internacional.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3: Ejemplo -->
+                <div class="carousel-item">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 350px; background: url('https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=800&q=80') center/cover no-repeat; position: relative;">
+                        <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(32,53,0,0.18);"></div>
+                        <div class="position-relative text-center" style="z-index:2;">
+                            <h2 class="fw-bold text-white">Únete a nuestra comunidad</h2>
+                            <p class="text-white">Pasión, tradición e innovación en cada plato.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Controles del carrusel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselPrincipal" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselPrincipal" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Sección de bienvenida y enlaces rápidos -->
+    <section class="container my-4">
+        <div class="row g-3">
+            <!-- Caja de bienvenida -->
+            <div class="col-lg-6">
+                <div class="p-3 rounded bienvenida-box d-flex flex-column h-100" style="background-color: #6B8E23; color: #fff;">
+                    <h2 class="fw-bold mb-2" style="font-family: 'Playfair Display', serif; font-size: 1.2rem;">Bienvenidos a la Escuela de Gastronomía “Sabores del Mundo”</h2>
+                    <p class="mb-0" style="font-family: 'Open Sans', sans-serif; color: #222; font-size: 0.95rem;">
+                        Descubre una experiencia educativa culinaria única donde la tradición, innovación y pasión por la cocina se fusionan para formar a los futuros líderes gastronómicos del país.
+                    </p>
+                </div>
+            </div>
+            <!-- Caja de enlaces rápidos -->
+            <div class="col-lg-6">
+                <div class="p-3 rounded enlaces-box h-100" style="background-color: #DDE2C6;">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <h5 class="mb-0" style="color: #203500; font-family: 'Open Sans', sans-serif; font-size: 1rem;">Enlaces</h5>
+                        <!-- Icono SVG de enlace -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24"><path fill="#203500" d="M17.657 6.343a6 6 0 0 1 0 8.485l-2.828 2.829a6 6 0 0 1-8.485-8.486l1.414 1.415a4 4 0 0 0 5.657 5.656l2.829-2.828a4 4 0 0 0-5.657-5.657l-.707.707-1.414-1.414.707-.707a6 6 0 0 1 8.484 0Zm-7.07 7.07a2 2 0 0 1 0-2.828l2.828-2.828a2 2 0 1 1 2.829 2.828l-2.829 2.828a2 2 0 0 1-2.828 0Z"/></svg>
+                    </div>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2">
+                            <a href="cursos.html" class="btn w-100 text-white text-start fw-bold" style="background-color: #C1440E; font-size: 0.95rem;">Conoce nuestros programas especializados.</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="nosotros.html" class="btn w-100 text-white text-start fw-bold" style="background-color: #C1440E; font-size: 0.95rem;">Forma parte de una comunidad apasionada por el arte culinario.</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html" class="btn w-100 text-white text-start fw-bold" style="background-color: #C1440E; font-size: 0.95rem;">Inscríbete hoy y transforma tu vocación en profesión.</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer simple -->
+    <footer class="text-center py-3" style="background-color: #203500; color: #fff;">
+        <!-- Comentario: Puedes personalizar el pie de página aquí -->
+        &copy; 2025 Escuela de Gastronomía "Sabores del Mundo". Todos los derechos reservados.
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
